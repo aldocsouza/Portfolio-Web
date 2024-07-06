@@ -1,0 +1,20 @@
+@import "../../../style-variables.scss";
+
+section{
+
+  h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: secondary-text-color;
+  }
+
+  p{
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: justify;
+
+    border-left: 7px solid #5222D0;
+    padding-left: 18px;
+  }
+}
