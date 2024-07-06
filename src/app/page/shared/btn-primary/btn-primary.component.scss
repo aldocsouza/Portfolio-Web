@@ -1,0 +1,22 @@
+@import "../../../style-variables.scss";
+
+.btn-primary{
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: rgb(82,34,208);
+    background: linear-gradient(90deg, rgba(82,34,208,0.8995973389355743) 10%, rgba(255,97,150,1) 100%);
+    color: $btn-primary-color;
+    border: none;
+
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+
+@media (min-width: 1080px){
+  .btn-primary{
+    border-radius: 8px;
+    line-height: 21.94px;
+}
+}
