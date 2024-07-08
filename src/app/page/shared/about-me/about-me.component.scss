@@ -19,3 +19,15 @@ section{
     padding-left: 18px;
   }
 }
+
+.dark {
+  h2, p{
+    color: white;
+  }
+}
+
+.light {
+  h2, p{
+    color: inherit;
+  }
+}
