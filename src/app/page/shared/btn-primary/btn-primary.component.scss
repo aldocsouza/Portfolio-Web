@@ -12,6 +12,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19.5px;
+
+    &:hover{
+      cursor: pointer;
+    }
 }
 
 @media (min-width: 1080px){
