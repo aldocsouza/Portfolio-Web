@@ -1,8 +1,14 @@
 <main class="main-section">
-  <div class="main-desc">
+  <div [ngClass]="{ 'dark' : darkAndLighMode, 'light' : !darkAndLighMode }" class="main-desc">
     <span>SOFWARE DEVELOPER</span>
     <h1>Aldo</h1>
-    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.</p>
+
+    @if (darkAndLighMode) {
+      <p>Olá, meu nome é Aldo Souza, sou formado em Análise e Desenvolvimento de Sistemas. Sou desenvolvedor de software a mais de 8 meses, utilizando no meu dia a dia as linguagens/frameworks, Java, Spring Boot, Angular, Postgres, MySQL, Javascript e Typescript.</p>
+    } @else{
+      <p>Hello, my name is Aldo Souza, I have a degree in Systems Analysis and Development. I have been a software developer for over 8 months, using the languages/frameworks Java, Spring Boot, Angular, Postgres, MySQL, Javascript and Typescript in my daily life.</p>
+    }
+
     <btn-primary btn-text="Download CV"></btn-primary>
   </div>
   <div class="main-animation">
