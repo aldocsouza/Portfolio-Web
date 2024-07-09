@@ -1,8 +1,28 @@
-<div id="home">
+<div id="home" [ngClass]="{ 'dark' : darkAndLighMode, 'light' : !darkAndLighMode }">
   <div class="home-content max-width">
-    <header-component></header-component>
-    <main-component></main-component>
-    <about-me></about-me>
-    <projects></projects>
+    <header-component
+    [darkAndLighMode]="darkAndLighMode"
+    (portAndEnglish)="portAndEng"
+    (darkAnLight)="darkMode($event)"
+    ></header-component>
+
+    <main-component
+    [darkAndLighMode]="darkAndLighMode"
+    [portAndEng]="portAndEng"
+    ></main-component>
+
+    <about-me
+    [darkAndLighMode]="darkAndLighMode"
+    [portAndEng]="portAndEng"
+    ></about-me>
+
+    <project-card id="project"
+    [darkAndLighMode]="darkAndLighMode"
+    [portAndEng]="portAndEng"
+    [repositories]="repositories"
+    ></project-card>
+
+    <social-networks id="contact"></social-networks>
+    <footer-component></footer-component>
   </div>
 </div>
