@@ -21,6 +21,17 @@ a, button{
     justify-content: center;
     gap: 32px;
   }
+
+}
+
+.dark {
+  a, button{
+    color: white;
+  }
+}
+
+.light {
+  color: inherit;
 }
 
 @media (min-width: 1080px) {

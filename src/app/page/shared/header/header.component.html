@@ -1,9 +1,11 @@
-<header class="header">
+<header [ngClass]="{ 'dark' : darkAndLighMode, 'light' : !darkAndLighMode }" class="header">
   <div>
     <a href="#">Home</a>
   </div>
   <div>
-    <a href="#">Projects</a>
+    <a href="#project">Projects</a>
     <btn-primary btn-text="Contact"></btn-primary>
+<!--     <btn-primary btn-text="Dark" (submit)="onDarkAndLight($event)"></btn-primary>
+    <btn-primary btn-text="Português/English" (portAndEng)="onPortAndEng($event)"></btn-primary> -->
   </div>
 </header>
