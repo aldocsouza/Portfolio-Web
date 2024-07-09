@@ -1,0 +1,83 @@
+@import "../../../style-variables.scss";
+
+.section-social-networks{
+  h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+
+  .social-icons{
+
+    margin: 40px 0px;
+
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+
+      li{
+        flex-grow: 1;
+
+        a{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+
+          text-decoration: none;
+          color: $secondary-text-color;
+
+          img{
+            display: block;
+            width: 37.74px;
+          }
+
+          span{
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+        }
+
+
+      }
+
+    }
+  }
+}
+
+
+@media (min-width: 720px){
+
+  .section-social-networks{
+    h2{
+      font-size: 36px;
+    }
+
+    .social-icons{
+
+      ul{
+
+        gap: 66px;
+        padding: 0px 20px;
+
+        li{
+          flex-grow: 0;
+
+          a{
+            img{
+              width: 93px;
+            }
+
+            span{
+              font-size: 18px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}
