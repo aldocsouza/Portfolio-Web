@@ -1,0 +1,96 @@
+@import "../../../style-variables.scss";
+
+section{
+
+  h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+
+  .btn-show-projects{
+    text-align: center;
+
+  }
+
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;;
+  padding: 0px 20px;
+  margin: 40px 0px;
+}
+
+.card-project{
+  width: 100%;
+  background-color: #F0F0F0;
+  padding: 27px 24px;
+  overflow: hidden;
+
+  div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    h3{
+      font-weight: 600;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .language-box-content{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+
+      .language-box{
+        padding: 4px 5px;
+        background-color: #8455FF;
+        color: #DBFFFF;
+      }
+    }
+
+    p{
+      text-align: justify;
+    }
+  }
+
+}
+
+.dark {
+  h2{
+    color: white;
+  }
+}
+
+.light {
+  h2{
+    color: inherit;
+  }
+}
+
+
+@media (min-width: 720px){
+
+  section{
+
+    h2{
+      font-size: 36px;
+    }
+
+  }
+
+  .projects{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card-project{
+    width: calc(50% - 45px);
+    flex-grow: 1;
+
+  }
+}
+

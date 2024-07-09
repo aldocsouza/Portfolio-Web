@@ -1,0 +1,20 @@
+<section [ngClass]="{ 'dark' : darkAndLighMode, 'light' : !darkAndLighMode }">
+  <h2>Projects</h2>
+  <div class="projects">
+    @for (repository of repositories; track $index) {
+        <article class="card-project">
+          <div>
+            <h3>{{ repository.name }}</h3>
+            <div class="language-box-content">
+              <div class="language-box">{{ repository.language }}</div>
+            </div>
+            <p>{{ repository.description }}</p>
+
+          </div>
+        </article>
+    }
+  </div>
+  <div class="btn-show-projects">
+    <btn-primary [style]="'text-transform: uppercase;'" [btn-text]="'Ver todos os projetos'"></btn-primary>
+  </div>
+</section>
